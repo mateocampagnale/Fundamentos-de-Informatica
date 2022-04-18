@@ -45,7 +45,7 @@ self --> es el mismo objeto
                 return self.energia > 500
 
         class Golondrina(AnimalesAlado) para que tome esa clase madre
-        
+        class Dragon(AnimalesAlado)
 
     - 5)
 
