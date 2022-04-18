@@ -1,0 +1,54 @@
+##  OBJETOS  ##
+
+|POO|--> muchos objetos que se comunican entres si 
+   --> |objetos|--> entidad computacional que entiende mensajes y tiene atributos
+                --> puede tener un estado (conjunto de atributos = estático) (parametro de cada atributo)
+                                    --> estado dinamico de los objetos que contempla los valores por ejem plo la energia de pepita
+                --> instancia de una clase --> darle una entidad concreta, es diferente a definirlo. Le pones nombre y apellido al objeto.
+                                           --> es la creacion concreta de una cosa absoluta             
+                                    --> clase: es la abstraccion o la descripcion general de los objetos
+                --> interfaz --> son los mensajes que pueden entender --> polimorfismo
+                                                                            --> tiene que existir otro objeto(observador) --> se da cuenta si dos objetos son iguales o no
+----------------------------------------------------------------
+|EJEMPLO|:
+    - de las aves, hablar con pepita --> from aves import pepita
+    - pepita sabe volar en circulos? --> print(pepita.volar_en_circulos()) --> none = nada = lo hizo pero no dijo nada
+    - pepita sabe cantar boleros? --> print(pepita.cantar_boleros()) --> "object no attribute "cantar_boleros"" --> no puede hacerlo
+----------------------------------------------------------------
+--> cuendo el objeto puede hacer algo no nos tira error
+--> los mensajes se escriben haciendo: .mensaje()
+----------------------------------------------------------------
+Un atributo es lo que puede hacer un objeto
+Los objetos tienen un estado, en el ejemplo de pepita es su energia principal
+    --> el comportamiento de los objetos es cuando cambia su estado
+----------------------------------------------------------------
+Las clases se escriben en mayusculas --> nos da una idea de que puede hacer el/los objeto/s de esa clase
+        --> print(pepita) --> nos dice la clase
+Los objetos tienen identidad. Dos objetos distintos son instancias distintas de una clase
+        --> cada objeto es una instancia pq tiene su propia identidad
+----------------------------------------------------------------
+metodos --> tienen siempre el self en el primer argumento
+self --> es el mismo objeto
+----------------------------------------------------------------
+|Tp|
+    - 1)
+    - 2)
+    - 3) def esta_debil(self):
+            return self.energia < 10
+        
+        def esta_debil(self):
+            return self.energia < 50
+
+    - 4) metodo que comparten ambas clases. clase madre. es como una carpeta adentro de otra carpeta. 
+        class AnimalesAlado:
+            def esta_feliz(self):
+                return self.energia > 500
+
+        class Golondrina(AnimalesAlado) para que tome esa clase madre
+        class Dragon(AnimalesAlado)
+
+    - 5)
+
+    - 6)
+    
+    - 7)
