@@ -32,7 +32,8 @@ self --> es el mismo objeto
 ----------------------------------------------------------------
 |Tp|
     - 1)
-    - 2)
+    - 2) Chimuelo = Dragon(200, 2000)
+
     - 3) def esta_debil(self):
             return self.energia < 10
         
@@ -47,8 +48,26 @@ self --> es el mismo objeto
         class Golondrina(AnimalesAlado) para que tome esa clase madre
         class Dragon(AnimalesAlado)
 
-    - 5)
+    - 5) class Entrenador:
+            "Un Entrenador tiene un equipo y puedee admitir nuevos animal alado a su equipo"
+            def __innit__(self, equipo):
+                self.equipo = equipo
+            def agregar_aninal_alado(self, dragon):
+            "Este metodo toma un objeto dragon que tendra todos los atributos de esa clase"
+                self.equipo.append(dragon) -> print(hipo.agregar_animal_alado(Chimuelo))
+            def el_equipo(self):
+                return self.equipo --> solo retorna el estado del objeto
+            def entrenar_dragon(self, dragon): --> entrena un solo dragon
+                for i in range(20):
+                    dragon.volar_en_circulos()
+                dragon.comer_peces(3)
+            def entrenar_equipo(self): --> entrena todo el equipo
+                for dragon in self.equipo:
+                    self.entrenar_dragon(dragon)
+        
+        hipo = Entrenador([Roberta])
 
     - 6)
     
     - 7)
+----------------------------------------------------------------
